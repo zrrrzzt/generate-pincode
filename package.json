@@ -1,0 +1,32 @@
+{
+  "name": "generate-pincode",
+  "description": "Generate pincode",
+  "version": "1.0.0",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/generate-pincode.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/generate-pincode/issues"
+  },
+  "bin": {
+    "generate-pincode": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  }
+}
