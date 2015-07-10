@@ -25,9 +25,4 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
   return;
 }
 
-gpc(parseInt(pincodeLength, 10), function(err, pincode){
-  if(err) {
-    throw err;
-  }
-  console.log(pincode);
-});
+console.log(gpc(parseInt(pincodeLength, 10)));

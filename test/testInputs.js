@@ -1,43 +1,20 @@
 'use strict';
 
-var gpc = require('../index')
-  , assert = require('assert')
-  ;
+var tap = require('tap');
+var gpc = require('../index');
 
-describe('generate-pincode - inputs', function(){
+tap.throws(
+  function() {
+    gpc();
+  },
+  {message: 'Missing required param: pinLength'},
+  'Throws if length number is not supplied'
+);
 
-  it('Should require pincodeLength', function(done){
-    var pincodeLength = false
-      ;
-    gpc(pincodeLength, function(err, pincode){
-      assert.throws(function(){
-          if(err) throw err;
-        }, function(err){
-          if((err instanceof Error) && /Missing required param: pinLength/.test(err)){
-            return true
-          }
-        },
-        "Unexpected error"
-      );
-      done();
-    });
-  });
-
-  it('Should require pincodeLength to be a whole number', function(done){
-    var pincodeLength = 8.9
-      ;
-    gpc(pincodeLength, function(err, pincode){
-      assert.throws(function(){
-          if(err) throw err;
-        }, function(err){
-          if((err instanceof Error) && /pinLength is not a whole number/.test(err)){
-            return true
-          }
-        },
-        "Unexpected error"
-      );
-      done();
-    });
-  });
-
-});
+tap.throws(
+  function() {
+    gpc(8.9);
+  },
+  {message: 'pinLength is not a whole number'},
+  'Should require pincodeLength to be a whole number'
+);
