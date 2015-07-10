@@ -1,7 +1,7 @@
 {
   "name": "generate-pincode",
   "description": "Generate pincode",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -18,9 +18,12 @@
     "generate-pincode": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.12.0"
   },
   "scripts": {
     "test": "tap test/*.js"
+  },
+  "devDependencies": {
+    "tap": "^1.3.1"
   }
 }
