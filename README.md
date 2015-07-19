@@ -20,9 +20,9 @@ $ npm install generate-pincode -g
 
 ```sh
 var gpc = require('generate-pincode');
-var pin = gpc(4)
+var pin = gpc(4);
 
-console.log(pin)
+console.log(pin);
 
 // => 1234
 ```
