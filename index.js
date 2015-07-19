@@ -12,7 +12,7 @@ module.exports = function generatePincode(pinLength) {
     throw new Error('pinLength is not a whole number');
   }
 
-  for(var i=0; i < pinLength; i++) {
+  for (var i = 0; i < pinLength; i++) {
     pinCodeArray.push(Math.floor(Math.random() * 10));
   }
 
