@@ -1,12 +1,17 @@
 {
   "name": "generate-pincode",
-  "description": "Generate pincode",
-  "version": "2.0.3",
+  "description": "Generate random pincode",
+  "version": "3.0.0",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no"
   },
+  "keywords": [
+    "pin",
+    "pincode",
+    "random"
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/zrrrzzt/generate-pincode.git"
@@ -14,11 +19,8 @@
   "bugs": {
     "url": "http://github.com/zrrrzzt/generate-pincode/issues"
   },
-  "bin": {
-    "generate-pincode": "cli.js"
-  },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "tap --reporter=spec test/*.js",
