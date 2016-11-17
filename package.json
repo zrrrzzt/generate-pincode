@@ -20,7 +20,7 @@
     "url": "http://github.com/zrrrzzt/generate-pincode/issues"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.6.2"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
