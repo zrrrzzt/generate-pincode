@@ -29,8 +29,8 @@
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
-    "coveralls": "^2.11.3",
-    "standard": "^8.5.0",
-    "tap": "^8.0.0"
+    "coveralls": "2.11.15",
+    "standard": "8.5.0",
+    "tap": "8.0.0"
   }
 }
