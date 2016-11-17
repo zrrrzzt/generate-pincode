@@ -1,7 +1,6 @@
 'use strict'
 
 module.exports = function generatePincode (pinLength) {
-
   var pinCodeArray = []
 
   if (!pinLength) {
@@ -17,5 +16,4 @@ module.exports = function generatePincode (pinLength) {
   }
 
   return pinCodeArray.join('')
-
 }
