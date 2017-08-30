@@ -1,7 +1,7 @@
 {
   "name": "generate-pincode",
   "description": "Generate random pincode",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -20,7 +20,7 @@
     "url": "http://github.com/zrrrzzt/generate-pincode/issues"
   },
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=4.8.4"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
@@ -33,5 +33,8 @@
     "nsp": "2.7.0",
     "standard": "10.0.3",
     "tap": "10.7.0"
+  },
+  "dependencies": {
+    "knuth-shuffle": "1.0.1"
   }
 }

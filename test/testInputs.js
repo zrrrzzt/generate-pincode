@@ -1,7 +1,7 @@
 'use strict'
 
-var tap = require('tap')
-var gpc = require('../index')
+const tap = require('tap')
+const gpc = require('../index')
 
 tap.throws(
   function () {
