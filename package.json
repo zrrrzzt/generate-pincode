@@ -35,6 +35,6 @@
     "tap": "10.7.0"
   },
   "dependencies": {
-    "knuth-shuffle": "1.0.1"
+    "knuth-shuffle": "1.0.2"
   }
 }
