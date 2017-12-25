@@ -1,4 +1,8 @@
+# IDE
 .idea
+.vscode
+
+# Mac OS
 .DS_Store
 
 # Logs
@@ -30,3 +34,6 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Package-lock
+package-lock.json

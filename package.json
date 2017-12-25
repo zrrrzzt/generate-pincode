@@ -14,18 +14,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/generate-pincode.git"
+    "url": "git+https://github.com/zrrrzzt/generate-pincode.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/generate-pincode/issues"
+    "url": "https://github.com/zrrrzzt/generate-pincode/issues"
   },
+  "homepage": "https://github.com/zrrrzzt/generate-pincode#readme",
   "engines": {
-    "node": ">=4.8.4"
+    "node": ">=8.9.3"
   },
   "scripts": {
-    "test": "standard && nsp check && tap --reporter=spec test/*.js",
-    "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "test": "standard && nsp check && tap --reporter=spec test/*/*.js",
+    "coverage": "tap test/*/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*/*.js && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
