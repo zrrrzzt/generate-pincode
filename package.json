@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/generate-pincode#readme",
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=8.11.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*/*.js",
@@ -37,6 +37,6 @@
     "tap": "12.0.1"
   },
   "dependencies": {
-    "knuth-shuffle": "1.0.8"
+    "crypto-shuffle": "1.0.1"
   }
 }

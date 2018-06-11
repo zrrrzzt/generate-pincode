@@ -1,6 +1,4 @@
-'use strict'
-
-const shuffle = require('knuth-shuffle').knuthShuffle
+const shuffle = require('crypto-shuffle')
 
 module.exports = function (pinLength) {
   var pinCodeArray = []
