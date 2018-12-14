@@ -13,7 +13,7 @@ $ npm install generate-pincode
 ```
 ## Usage
 
-```javascript
+```JavaScript
 var gpc = require('generate-pincode')
 var pin = gpc(4)
 
@@ -30,5 +30,3 @@ console.log(pin)
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of generate-pincode](https://robots.kebabstudios.party/generate-pincode.png "Robohash image of generate-pincode")
