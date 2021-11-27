@@ -12,8 +12,8 @@ $ npm install generate-pincode
 ## Usage
 
 ```JavaScript
-var gpc = require('generate-pincode')
-var pin = gpc(4)
+const gpc = require('generate-pincode')
+const pin = gpc(4)
 
 console.log(pin)
 
