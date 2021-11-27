@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/generate-pincode#readme",
   "engines": {
-    "node": ">=8.14.0"
+    "node": ">=14.18.1"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*/*.js",
