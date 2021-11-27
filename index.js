@@ -1,7 +1,7 @@
 const shuffle = require('crypto-shuffle')
 
 module.exports = function (pinLength) {
-  var pinCodeArray = []
+  const pinCodeArray = []
   const seed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
   if (!pinLength) {
@@ -12,7 +12,7 @@ module.exports = function (pinLength) {
     throw new Error('pinLength is not a whole number')
   }
 
-  for (var i = 0; i < pinLength; i++) {
+  for (let i = 0; i < pinLength; i++) {
     const random = shuffle(seed.slice(0))
     pinCodeArray.push(random[0])
   }
